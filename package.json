@@ -11,11 +11,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -r https://x-access-token:${GITHUB_TOKEN}@github.com/Ashis-Palai/apt-comparison-ui.git -u \"github-actions <actions@github.com>\""
-  },
-  "homepage": "https://Ashis-Palai.github.io/apt-comparison-ui",
-  "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   }
 }

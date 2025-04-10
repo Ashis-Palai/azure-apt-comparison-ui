@@ -20,7 +20,7 @@ const App = () => {
   const fetchTTPs = async () => {
     setLoading(true);
     try {
-      const response = await fetch("https://cti-analysis-mitre-backend.onrender.com/compare", {
+      const response = await fetch("https://mitre-backend-api-gaadhrdthkfhb3fa.centralindia-01.azurewebsites.net/compare", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ apt_groups: aptGroups.filter((g) => g.trim() !== "") }),
@@ -63,7 +63,7 @@ const App = () => {
   };
 
   const downloadJSON = async () => {
-    const response = await fetch("https://cti-analysis-mitre-backend.onrender.com/download");
+    const response = await fetch("https://mitre-backend-api-gaadhrdthkfhb3fa.centralindia-01.azurewebsites.net/download");
     const blob = await response.blob();
     const url = window.URL.createObjectURL(blob);
     const a = document.createElement("a");
